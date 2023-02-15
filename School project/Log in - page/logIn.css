@@ -1,0 +1,120 @@
+html{
+  font-family: 'News Cycle', sans-serif;
+}
+body {
+    background: #333333;
+    
+    display: flex;
+    min-height: 95vh;
+    background-image: url('back.jpg');
+  }
+  .login-section {
+    color: white;
+    background-image: url('back.jpg');
+    margin: auto;
+    border-radius: 8px;
+    padding: 50px;
+  }
+  .login-section .head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .login-section .head{
+    font-size: 2.5em;
+  }
+  .login-section .title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 4em;
+  }
+  form{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  .login-section .form-section input[type=text].text {
+    border: none;
+    background: none;
+    box-shadow: 0px 1px 0px 0px white;
+    width: 100%;
+    color: white;
+    font-size: 1em;
+    outline: none;
+  }
+  .login-section .form-section .text::placeholder {
+    color: #D3D3D3;
+  }
+  .login-section .form-section input[type=password].password {
+    border: none;
+    background: none;
+    box-shadow: 0px 1px 0px 0px white;
+    width: 100%;
+    color: white;
+    font-size: 1em;
+    outline: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .login-section .form-section .password::placeholder {
+    color: #D3D3D3;
+  }
+  .login-section .form-section .btn-login {
+    background: none;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 9px 4em;
+    transition: 0.9s;
+    text-align: center;
+
+  }
+  .login-section .form-section .btn-login:hover {
+    background: white;
+    color: dimgray;
+    transition: 0.9s;
+  }
+  .login-section .forgot {
+    text-decoration: none;
+    color: white;
+    float: right;
+  }
+  footer {
+    position: absolute;
+    color: #FFFF00;
+    bottom: 10px;
+    padding-left: 20px;
+  }
+  footer p {
+    display: inline;
+  }
+  .back{
+    color: white;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  .back::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .4s;
+  }
+  .back:hover::after{
+    width: 13%;
+  }
+  @keyframes slideLeft{
+    0%{
+        transform:translateY(-1500%);
+    }
+    100%{
+        transform:translateY(0)
+    }
+}
+.title{
+    animation:1.7s ease-out 0s 1 slideLeft;
+}
