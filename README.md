@@ -1,2 +1,2 @@
 ## School-project
-- Simple school project that is mainly based over CSS
+ - Simple project that is mainly focuses on CSS
